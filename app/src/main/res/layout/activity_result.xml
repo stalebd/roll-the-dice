@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ResultActivity">
+
+    <ImageView
+        android:id="@+id/resultImage"
+        android:layout_width="185dp"
+        android:layout_height="180dp"
+        app:layout_constraintBottom_toTopOf="@+id/resultText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:srcCompat="@drawable/d6r1"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="Result: 1"
+        android:textColor="#3C3C3C"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultImage" />
+
+    <TextView
+        android:id="@+id/diceNumOverlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="20"
+        android:textColor="#3C3C3C"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:translationY="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/resultImage"
+        app:layout_constraintEnd_toEndOf="@+id/resultImage"
+        app:layout_constraintStart_toStartOf="@+id/resultImage"
+        app:layout_constraintTop_toTopOf="@+id/resultImage" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="152dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="#333333"
+        android:fontFamily="casual"
+        android:text="Go Back"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultText"
+        tools:textStyle="bold" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
